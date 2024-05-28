@@ -21,15 +21,49 @@
 
         <nav class="nav">
             <ul class="nav__list">
-                <li>
-                    <a href="index.html" class="nav__item">Inicio</a>
-                    <a href="" class="nav__item">Usabilidad</a>
-                    <a href="" class="nav__item">Accesibilidad</a>
-                    <a href="" class="nav__item">DCU</a>
+                <li class="nav__item nav__item--desktop">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav__item nav__item--desktop">
+                    <a href="">Usabilidad</a>
+                </li>
+                <li class="nav__item nav__item--desktop">
+                    <a href="">Accesibilidad</a>
+                </li>
+                <li class="nav__item nav__item--desktop">
+                    <a href="">DCU</a>
+                </li>
+                <li class="nav__item nav__item--mobile" onclick="openSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <aside class="sidebar">
+        <button class="sidebar__close" onclick="closeSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 -960 960 960" width="64px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+        <section class=" sidebar__item">
+            <a href="index.html">Inicio</a>
+        </section>
+        <section class="sidebar__item">
+            <a href="index.html">Usabilidad</a>
+        </section>
+        <section class="sidebar__item">
+            <a href="index.html">Accesibilidad</a>
+        </section>
+        <section class="sidebar__item">
+            <a href="index.html">DCU</a>
+        </section>
+    </aside>
+
     <main>
         <h1>¿Qué artículo desea leer?</h1>
         <section class="pictures">
@@ -59,6 +93,8 @@
         <div class="wave"></div>
         <div class="wave"></div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
