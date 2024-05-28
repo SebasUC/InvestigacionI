@@ -1,0 +1,84 @@
+:root {
+    --main-color: #0E1327;
+    --second-color: #0F172A;
+    --bright-color: #0EA5E9;
+    --dark-color: #334155;
+    --purple-color: #4338CA;
+    --pink-color: #BE185D;
+    --font: "Poppins", sans-serif;
+    --background-color: linear-gradient(to bottom, var(--main-color), var(--second-color));
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container > * {
+    box-shadow: 10px 6px 37px -13px rgb(51 51 51 / 74%);
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    min-height: 100vh;
+    padding: 20px;
+    grid-template:
+    "header" 200px
+    "navbar" 100px
+    "main" auto
+    "sidebar" 100px
+    "footer" 100px
+    ;
+
+    .header {
+        grid-area: header;
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    @media (width >= 768px) {
+        grid-template:
+        "header navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px
+        /
+        200px auto
+        ;
+    }
+
+    @media (width >= 992px) {
+        grid-template:
+        "header header header" 50px
+        "navbar navbar navbar" 50px
+        "main main main" auto
+        "footer footer footer" 100px
+        ;
+    }
+}
+
+h1 {
+    text-shadow: 1px 1px 3px #efefef;
+}

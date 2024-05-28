@@ -1,0 +1,195 @@
+/* stylelint-disable selector-class-pattern */
+body {
+    display: grid;
+    grid-template:
+    "header" 70px
+    "main" auto
+    "footer" 100px
+    ;
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+header {
+    display: flex;
+    grid-area: "header";
+    padding: 0 20px 10px;
+
+    & img {
+        display: inline-block;
+    }
+
+    & h1 {
+        align-self: center;
+        font-size: 20px;
+    }
+
+    .nav {
+        flex: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
+.nav__item {
+    color: #efefef;
+    text-decoration: none;
+    margin: 5px;
+
+    &:hover {
+        color: var(--bright-color);
+    }
+}
+
+main {
+    grid-area: "main";
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    grid-template: 
+    "title pictures"
+    /
+    40% 60%;
+
+    & h1 {
+        grid-area: "title";
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .pictures {
+        grid-area: "pictures";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+    }
+}
+
+.pictures__card {
+    cursor: pointer;
+    background-color: #efefef;
+    border-radius: 5px;
+    min-height: 200px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 0 1px 1px rgb(239 239 239);
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 0 0 1px var(--bright-color);
+    }
+    
+    .pictures__img {
+        display: block;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+    }
+
+    & h3 {
+        color: black;
+        text-align: center;
+    }
+
+    & p {
+        padding: 5px;
+        color: black;
+    }
+}
+
+.pictures__img--1 {
+    background: url("../assets/laptop.jpg");
+}
+
+.pictures__img--2 {
+    background: url("../assets/dispositivos2.jpg");
+    background-position: center;
+}
+
+.pictures__img--3 {
+    background: url("../assets/laptop.jpg");
+}
+
+
+footer {
+    position: relative;
+    grid-area: "footer";
+    overflow: hidden;
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url("../assets/wave.png");
+        width: 100%;
+        height: 80px;
+        background-size: 1000px 100px;
+
+        &:nth-child(1) {
+            animation: wave-animation 30s linear infinite;
+            animation-fill-mode: both;
+            z-index: 1000;
+            opacity: 1;
+            animation-delay: 0s;
+            bottom: 0;
+        }
+
+        &:nth-child(2) {
+            animation: wave-animation-2 15s linear infinite;
+            animation-fill-mode: both;
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            bottom: 10px;
+        }
+
+        &:nth-child(3) {
+            animation: wave-animation 30s linear infinite;
+            animation-fill-mode: both;
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: -2s;
+            bottom: 15px;
+        }
+
+        &:nth-child(4) {
+            animation: wave-animation-2 5s linear infinite;
+            animation-fill-mode: both;
+            z-index: 999;
+            opacity: 0.7;
+            animation-delay: -5s;
+            bottom: 20px;;
+        }
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        background-position-x: 0%;
+    }
+    
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes wave-animation-2 {
+    0% {
+        background-position-x: 0%;
+    }
+    
+    100% {
+        background-position-x: -1000px;
+    }
+}
