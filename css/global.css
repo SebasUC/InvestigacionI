@@ -175,7 +175,7 @@ main {
 }
 
 
-footer {
+.footer {
     position: relative;
     margin-top: 25px;
     grid-area: "footer";
