@@ -93,6 +93,12 @@ main {
         padding: 20px;
         flex: 0 1 auto;
     }
+
+    .card__video-container {
+        margin-top: 20px;
+        max-width: 80%;
+        align-self: center;
+    }
 }
 
 .h-card {
@@ -145,6 +151,16 @@ main {
     }
 }
 
+#sources {
+    & ul {
+        padding-left: 40px;
+    }
+
+    & a {
+        color: var(--bright-color);
+    }
+}
+
 /* Tablets and desktop */
 @media (width >= 768px) {
     .main__image {
@@ -165,7 +181,7 @@ main {
     }
 
     .heuristics img {
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 

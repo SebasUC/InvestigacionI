@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="./assets/favicon.png">
+        <img src="./assets/favicon.png" alt="Logo de la página">
         <h1>Investigaciones Web</h1>
 
         <nav class="nav">
@@ -68,7 +68,7 @@
 
         <section class="author-container">
             <span class="author-container__photo">
-                <img src="assets/yo.jpg" height="64" width="64">
+                <img src="assets/yo.jpg" alt="Imagen de Sebastián Ulloa" height="64" width="64">
             </span>
 
             <span class="author-container__description">
@@ -102,7 +102,12 @@
                 <nav class="index">
                     <ul>
                         <li>
-                            <a href="">Importancia de la usabilidad web</a>
+                            <a href="#1-usuario"></a>
+                            <a href="#2-importancia"></a>
+                            <a href="#3-pensarcomousuario"></a>
+                            <a href="#4-coherencia"></a>
+                            <a href="#5-minimalismo"></a>
+                            <a href="#6-jakob-heuristics"></a>
                         </li>
                     </ul>
                 </nav>
@@ -192,7 +197,7 @@
 
         <section class="card">
             <article class="card__description">
-                <h2>La experiencia del usuario</h2>
+                <h2 id="1-usuario">La experiencia del usuario</h2>
                 <p>
                     Es posible que todos hayamos coincidido en algún momento con una aplicación o sitio web difícil de
                     utilizar. Y esto no necesariamente significa que el sitio tenga mala apariencia <em>(aunque en
@@ -203,7 +208,7 @@
                     recomiende. Esto al final de cuentas genera una pérdida de posibles visitantes del sitio web.
                 </p>
 
-                <h2>La importancia de la usabilidad</h2>
+                <h2 id="2-importancia">La importancia de la usabilidad</h2>
                 <p>
                     Si en cambio encontramos una aplicación llamativa, no muy compleja, empática <em>(lo detallaremos
                         más adelante)</em> e intuitiva es una experiencia totalmente distinta.
@@ -211,13 +216,16 @@
                     Esto, desde el punto de vista de un usuario, lo hará sentir <b>más cómodo</b> y libre al utilizar la
                     página web. Sin tener que preocuparse por adivinar la funcionalidad de las cosas o cómo orientarse
                     por el sitio web.
+                    <br />
+                    A continuación te presentaremos algunos puntos que podrías tomar en cuenta para tus próximos
+                    proyectos.
                 </p>
             </article>
         </section>
 
         <section class="card h-card l-card transition-element">
             <article class="card__description">
-                <h2>Pensar como el usuario</h2>
+                <h2 id="3-pensarcomousuario">Pensar como el usuario</h2>
                 <p>
                     Cuando se va a diseñar un sitio web, uno de los aspectos más importantes es pensar como el usuario.
                     A esto me refería anteriormente cuando mencioné que la aplicación debe ser <em>empática</em>.
@@ -225,14 +233,14 @@
                     que aunque un desarrollador pueda tener muchos conceptos e ideas técnicas, un usuario común no.
                 </p>
 
-                <h2>Coherencia</h2>
+                <h2 id="4-coherencia">Coherencia</h2>
                 <p>
                     Es importante tener bien definida la idea del sitio web. No es adecuado utilizar diferentes tipos de
                     tipográfias por todas partes. O combinar muchos colores desagradables a la vista o que dificulten la
                     lectura.
                 </p>
 
-                <h2>Diseño atractivo</h2>
+                <h2 id="5-minimalismo">Diseño atractivo</h2>
                 <p>
                     El diseño de la página debe estar correctamente estructurado para que el usuario pueda orientarse y
                     sentirse cómodo.
@@ -336,7 +344,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section id="6-jakob-heuristics" class="card">
 
             <article class="card__description">
                 <h2>Las 10 heurísticas de la usabilidad de Jakob Nielsen</h2>
@@ -354,7 +362,7 @@
                 </p>
             </article>
 
-            <article id="visibilidad" class="card__description heuristics">
+            <article id="01" class="card__description heuristics">
                 <h3>Visibilidad del estado del sistema</h3>
                 <p>
                     ¿Has notado que grandes aplicaciones ofrecidas por empresas como Google, Apple, entre otras
@@ -386,7 +394,7 @@
                 </blockquote>
             </article>
 
-            <article id="sistema" class="card__description heuristics">
+            <article id="02" class="card__description heuristics">
                 <h3>Coincidencia entre el mundo real y el sistema</h3>
                 <p>
                     ¿Recuerdas lo que mencioné sobre ser empático? Pues a esto se refiere este principio. Nuestro diseño
@@ -415,22 +423,24 @@
                 </blockquote>
             </article>
 
-            <article id="libertadoperar" class="card__description heuristics">
+            <article id="03" class="card__description heuristics">
                 <h3>Libertad del usuario para operar y controlar el sistema</h3>
                 <p>
                     Como diseñadores debemos tener en cuenta que el usuario comete errores. Imagina que estás redactando
                     un documento en Microsoft Word y cometes un error al tildar una palabra. Tan solo haces clic en el
                     botón de deshacer, ¿cierto?
+                    <br />
+                    Por ello es importante brindar esta clase de herramientas para facilitar el uso y mejorar la
+                    experiencia del usuario.
                 </p>
 
-                <img src="assets/heuristics/instagram-3.png" alt="Imagen de Instagram">
+                <img src="assets/heuristics/undo.png" alt="Imagen de Microsoft Word">
 
                 <blockquote class="cita">
                     <p>
                         <i>
-                            El diseño debe hablar el idioma de los usuarios. Utilice palabras, frases y conceptos
-                            familiares para el usuario, en lugar de jerga interna. Siga las convenciones del mundo real,
-                            haciendo que la información aparezca en un orden natural y lógico.
+                            Cuando a las personas les resulta fácil retirarse de un proceso o deshacer una acción, se
+                            fomenta una sensación de libertad y confianza.
                         </i>
                     </p>
 
@@ -440,6 +450,220 @@
                             Heuristics for User Interface Design </a>
                     </footer>
                 </blockquote>
+            </article>
+
+            <article id="04" class="card__description heuristics">
+                <h3>Consistencia de estándares</h3>
+                <p>
+                    En este campo existen miles de formas de lograr lo mismo. Sin embargo, los estándares incorporan una
+                    forma de solucionar un problema tal que cualquier otra persona <em>(que conozca el estándar)</em>
+                    pueda entender fácilmente qué se hizo.
+                    La <b>consistencia</b> y los <b>estándares</b> cumplen con las expectativas de un usuario. Un
+                    ejemplo puede ser este mismo sitio web; si miras desde un teléfono o haces la ventana más pequeña,
+                    la aplicación detecta que estás desde un dispositivo móvil y muestra un <b>menú de hamburguesa</b>.
+                    Este es considerado un estándar, pues mundialmente aceptado por muchas páginas web que realizan lo
+                    mismo.
+                </p>
+
+                <video class="card__video-container" controls>
+                    <source src="assets/heuristics/hamburger-menu.mp4" type="video/mp4">
+                    <p>Tu navegador no admite este video</p>
+                </video>
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            No debemos intentar inventar la rueda en cada proyecto. Si hay elementos, como por ejemplo
+                            el menú hamburguesa, no intentemos crear un nuevo icono para representar la misma
+                            funcionalidad.
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://welcometoux.com/ux/10-principios-usabilidad-nielsen/" target="_blank">Fuente:
+                            Los 10 principios de usabilidad de Nielsen - Welcome to UX</a>
+                    </footer>
+                </blockquote>
+            </article>
+
+            <article id="05" class="card__description heuristics">
+                <h3>Prevención de erroes</h3>
+                <p>
+                    Lo más común es que el usuario se equivoque. Es lo más normal en una aplicación o sitio web. Es por
+                    esto que se debe estar preparado para prevenir estos errores y que estos no ocurran en primer lugar,
+                    o bien, brindar soluciones.
+                </p>
+
+                <img src="assets/heuristics/05errores.jpg" alt="Imagen de autocorrector">
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            Los buenos mensajes de error son importantes, pero los mejores diseños evitan cuidadosamente
+                            que ocurran problemas en primer lugar.
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Fuente:
+                            10 Usability
+                            Heuristics for User Interface Design </a>
+                    </footer>
+                </blockquote>
+            </article>
+
+            <article id="06" class="card__description heuristics">
+                <h3>Reconocer en lugar de recordar</h3>
+                <p>
+                    Esta heurística propone diseñar los elementos, acciones y opciones fáciles a la vista. El usuario no
+                    debe de recordar información para realizar una tarea. Sino identificar fácilmente en la interfaz y
+                    ser guiado por ella. Un ejemplo de ello son botones de interfaz llamativos que ayuden al usuario a
+                    identificar cómo realizar una tarea.
+                </p>
+
+                <img src="assets/heuristics/06reconocer.png" alt="Página de Linked In">
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            Los seres humanos tienen memorias limitadas a corto plazo. Las interfaces que promueven el
+                            reconocimiento reducen la cantidad de esfuerzo cognitivo requerido por parte de los
+                            usuarios.
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://www.gluo.mx/blog/las-10-heuristicas-de-usabilidad-en-diseno-de-interfaz"
+                            target="_blank">Fuente:
+                            Los 10 principios de usabilidad en Diseño de Interfaz</a>
+                    </footer>
+                </blockquote>
+            </article>
+
+            <article id="07" class="card__description heuristics">
+                <h3>Flexibilidad y eficiencia en el uso</h3>
+                <p>
+                    Este principio viene de la mano con ser <em>empáticos</em> y propone que debemos hacer nuestro sitio
+                    flexible y fácil de usar para todos. Un ejemplo pueden ser los buscadores de algunas página web, en
+                    algunos casos son tan simples como un nombre o una barra, pero si el usuario lo desea puede hacer
+                    una búsqueda avanzada y personalizada. Puede tomar como ejemplo la búsqueda avanzada de
+                    StackOverflow
+                </p>
+
+                <img src="assets/heuristics/07.png" alt="Busqueda avanzada de StackOverflow">
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            No todos los usuarios tendrán los mismos conocimientos a la hora de utilizar un sistema,
+                            pero esto no debe suponer un impedimento para que todos puedan hacerlo con un mínimo de
+                            efectividad
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://www.gluo.mx/blog/las-10-heuristicas-de-usabilidad-en-diseno-de-interfaz"
+                            target="_blank">Fuente:
+                            Los 10 principios de usabilidad en Diseño de Interfaz</a>
+                    </footer>
+                </blockquote>
+            </article>
+
+            <article id="08" class="card__description heuristics">
+                <h3>Diseño y estética minimalista</h3>
+                <p>
+                    Es mejor mantener un diseño simple y limpio, fácil de entender y minimalista que colocar muchos
+                    detalles que dificulten el uso del sitio web.
+                </p>
+
+                <img src="assets/heuristics/08.png" alt="Página principal de Medium">
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            Crea interacciones simples que contengan solo información esencial. Evita elementos visuales
+                            innecesarios que puedan abrumar y distraer a los usuarios.
+
+                            Recuerda, cada elemento adicional competirá con datos relevantes e indispensables y desviará
+                            la atención de lo más esencial.
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://www.gluo.mx/blog/las-10-heuristicas-de-usabilidad-en-diseno-de-interfaz"
+                            target="_blank">Fuente:
+                            Los 10 principios de usabilidad en Diseño de Interfaz</a>
+                    </footer>
+                </blockquote>
+            </article>
+
+            <article id="09" class="card__description heuristics">
+                <h3>Ayudar a reconocer y diagnosticar los errores</h3>
+                <p>
+                    En ocasiones es difícil para el usuario identificar a qué se debe un problema, o en ocasiones como
+                    corregirlo. Para ello, si llega ocurrir un error debemos <b>guiar al usuario para que sepa cómo
+                        regresar o corregirlo</b>. Podemos tomar como ejemplo la página de 404 de LEGO.
+                </p>
+
+                <img src="assets/heuristics/09.png" alt="Error 404 en LEGO">
+            </article>
+
+            <article id="10" class="card__description heuristics">
+                <h3>Ayuda y documentación</h3>
+                <p>
+                    Si seguimos estos principios al pie de la letra no tiene porqué ser necesario brindar una
+                    documentación. Pero existen casos en los que puede ser necesario. Por ejemplo, para muchos puede ser
+                    una tarea simple conectarse a una reunión en Zoom; pero puede que algunos no sepan cómo. Para ello
+                    Zoom provee una guía y documentación.
+                </p>
+
+                <img src="assets/heuristics/10.png" alt="Guía de Zoom">
+
+                <blockquote class="cita">
+                    <p>
+                        <i>
+                            Se trata de proporcionar al usuario toda la información que pueda necesitar para
+                            familiarizarse con el funcionamiento de una herramienta, un sitio o una aplicación. Hablamos
+                            de elementos como las FAQ’s, icono de interrogación, tutoriales, instrucciones…
+                        </i>
+                    </p>
+
+                    <footer class="cita__fuente">
+                        <a href="https://welcometoux.com/ux/10-principios-usabilidad-nielsen/" target="_blank">Fuente:
+                            Los 10 principios de usabilidad de Nielsen - Welcome to UX</a>
+                    </footer>
+                </blockquote>
+            </article>
+        </section>
+
+        <section id="sources" class="card">
+            <article class="card__description">
+                <h2>Fuentes</h2>
+                <ul>
+                    <li>Nielsen Norman Group 10 - <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                            target="_blank">Usability Heuristics for
+                            User Interface Design</a></li>
+                    <li>Welcome to UX - <a href="https://welcometoux.com/ux/10-principios-usabilidad-nielsen/"
+                            target="_blank">Los 10
+                            principios de usabilidad de Nielsen</a></li>
+                    <li>gluo_ - <a
+                            href="https://www.gluo.mx/blog/las-10-heuristicas-de-usabilidad-en-diseno-de-interfaz"
+                            target="_blank">Las
+                            10 Heurísticas de Usabilidad en Diseño de Interfaz</a></li>
+                    <li>Frases y Pensamientos - <a
+                            href="https://www.frasesypensamientos.com.ar/autor/jakob-nielsen.html"
+                            target="_blank">Frases de Jakob
+                            Nielsen</a>
+                    </li>
+                    <li>InboundCycle - <a
+                            href="https://www.inboundcycle.com/diccionario-marketing-online/usabilidad-web"
+                            target="_blank">Usabilidad
+                            web: qué es, recomendaciones para mejorarla y ejemplos</a></li>
+                    <li>IONOS - <a
+                            href="https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/en-que-consiste-la-usabilidad-web/"
+                            target="_blank">Usabilidad
+                            web: ¿es tu web fácil de usar?</a></li>
+                </ul>
             </article>
         </section>
     </main>
