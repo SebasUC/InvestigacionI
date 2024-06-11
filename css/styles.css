@@ -1,3 +1,5 @@
+@import url('global.css');
+
 /* stylelint-disable selector-class-pattern */
 main {
     display: flex;

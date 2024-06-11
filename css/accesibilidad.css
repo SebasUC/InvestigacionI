@@ -1,0 +1,14 @@
+@import url('global.css');
+
+.card__image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;    
+}
+
+.main__image {
+    background: url('../assets/accesibilidad/accesibilidad-header.png');
+    background-position: top;
+}
